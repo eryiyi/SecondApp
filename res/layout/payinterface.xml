@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/redstandard"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" >
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginBottom="8dip"
+                android:layout_marginLeft="20dip"
+                android:layout_marginRight="20dip"
+                android:layout_marginTop="8dip"
+                android:background="@drawable/arrowleftwhite"
+                android:contentDescription="@color/transparent"
+                android:scaleX="0.8"
+                android:scaleY="0.9" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginRight="40dip"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:text="应付界面"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/red_pressed"
+        android:padding="5dp" >
+
+        <TextView
+            android:id="@+id/money1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="零钱罐余额:"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dp"
+            android:textColor="@color/white" />
+
+        
+        <TextView
+            android:id="@+id/lqg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_marginRight="5dp"
+            android:textSize="20sp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white" />
+        
+        <TextView
+            android:id="@+id/money2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="支付宝应付金额:"
+            android:textSize="20sp"
+            android:layout_below="@id/money1"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/zfb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@id/lqg"
+            android:layout_marginRight="5dp"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/money3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="应付金额:"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@id/money2"
+            android:textSize="20sp"
+            android:layout_marginTop="5dp"
+            android:textColor="@color/white" />
+
+        <TextView
+            android:id="@+id/yf"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:layout_below="@id/zfb"
+            android:textSize="20sp"
+            android:layout_marginRight="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_alignParentRight="true"
+            android:textColor="@color/white" />
+        
+        <TextView 
+            android:id="@+id/payfor"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:background="@drawable/yell"
+            android:layout_below="@id/money3"
+            android:gravity="center"
+            android:textSize="20sp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:padding="3dp"
+            android:layout_marginTop="20dp"
+            android:text="扣款"/>
+    </RelativeLayout>
+
+</LinearLayout>

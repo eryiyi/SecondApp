@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/white"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true" >
+
+        <com.example.secondapp.view.DecoratorViewPager
+            android:id="@+id/imageviewpager"
+            android:layout_width="match_parent"
+            android:layout_height="130dp" />
+
+        <RadioGroup
+            android:id="@+id/radiogroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:layout_gravity="center|bottom"
+            android:orientation="horizontal" >
+
+            <RadioButton
+                android:id="@+id/radio1"
+                android:layout_width="6dip"
+                android:layout_height="6dip"
+                android:layout_margin="1dip"
+                android:background="@drawable/radioselector"
+                android:button="@null"
+                android:checked="true" />
+
+            <RadioButton
+                android:id="@+id/radio2"
+                android:layout_width="6dip"
+                android:layout_height="6dip"
+                android:layout_margin="1dip"
+                android:background="@drawable/radioselector"
+                android:button="@null" />
+
+            <RadioButton
+                android:id="@+id/radio3"
+                android:layout_width="6dip"
+                android:layout_height="6dip"
+                android:layout_margin="1dip"
+                android:background="@drawable/radioselector"
+                android:button="@null" />
+        </RadioGroup>
+    </FrameLayout>
+
+</LinearLayout>

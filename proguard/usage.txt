@@ -1,0 +1,1037 @@
+android.support.v13.app.FragmentCompat
+android.support.v13.app.FragmentCompat$BaseFragmentCompatImpl
+android.support.v13.app.FragmentCompat$FragmentCompatImpl
+android.support.v13.app.FragmentCompat$ICSFragmentCompatImpl
+android.support.v13.app.FragmentCompat$ICSMR1FragmentCompatImpl
+android.support.v13.app.FragmentCompatICS
+android.support.v13.app.FragmentCompatICSMR1
+android.support.v13.app.FragmentPagerAdapter:
+    private static final java.lang.String TAG
+    private static final boolean DEBUG
+    private final android.app.FragmentManager mFragmentManager
+    private android.app.FragmentTransaction mCurTransaction
+    private android.app.Fragment mCurrentPrimaryItem
+    73:75:public FragmentPagerAdapter(android.app.FragmentManager)
+    public abstract android.app.Fragment getItem(int)
+    84:84:public void startUpdate(android.view.ViewGroup)
+    88:111:public java.lang.Object instantiateItem(android.view.ViewGroup,int)
+    116:122:public void destroyItem(android.view.ViewGroup,int,java.lang.Object)
+    126:138:public void setPrimaryItem(android.view.ViewGroup,int,java.lang.Object)
+    142:147:public void finishUpdate(android.view.ViewGroup)
+    151:151:public boolean isViewFromObject(android.view.View,java.lang.Object)
+    156:156:public android.os.Parcelable saveState()
+    161:161:public void restoreState(android.os.Parcelable,java.lang.ClassLoader)
+    173:173:public long getItemId(int)
+    177:177:private static java.lang.String makeFragmentName(int,long)
+android.support.v13.app.FragmentStatePagerAdapter:
+    private static final java.lang.String TAG
+    private static final boolean DEBUG
+    private final android.app.FragmentManager mFragmentManager
+    private android.app.FragmentTransaction mCurTransaction
+    private java.util.ArrayList mSavedState
+    private java.util.ArrayList mFragments
+    private android.app.Fragment mCurrentPrimaryItem
+    79:81:public FragmentStatePagerAdapter(android.app.FragmentManager)
+    public abstract android.app.Fragment getItem(int)
+    90:90:public void startUpdate(android.view.ViewGroup)
+    98:125:public java.lang.Object instantiateItem(android.view.ViewGroup,int)
+    130:144:public void destroyItem(android.view.ViewGroup,int,java.lang.Object)
+    148:160:public void setPrimaryItem(android.view.ViewGroup,int,java.lang.Object)
+    164:169:public void finishUpdate(android.view.ViewGroup)
+    173:173:public boolean isViewFromObject(android.view.View,java.lang.Object)
+    178:195:public android.os.Parcelable saveState()
+    200:228:public void restoreState(android.os.Parcelable,java.lang.ClassLoader)
+android.support.v13.app.FragmentTabHost:
+    private android.widget.FrameLayout mRealTabContent
+    122:124:public FragmentTabHost(android.content.Context)
+    127:129:public FragmentTabHost(android.content.Context,android.util.AttributeSet)
+    132:138:private void initFragmentTabHost(android.content.Context,android.util.AttributeSet)
+    143:166:private void ensureHierarchy(android.content.Context)
+    180:185:public void setup(android.content.Context,android.app.FragmentManager)
+    188:201:public void setup(android.content.Context,android.app.FragmentManager,int)
+    204:211:private void ensureContent()
+    219:238:public void addTab(android.widget.TabHost$TabSpec,java.lang.Class,android.os.Bundle)
+android.support.v13.app.FragmentTabHost$DummyTabFactory
+android.support.v13.app.FragmentTabHost$TabInfo:
+    59:63:FragmentTabHost$TabInfo(java.lang.String,java.lang.Class,android.os.Bundle)
+com.baidu.android.pushservice.ADPushManager
+com.baidu.android.pushservice.BasicPushNotificationBuilder:
+    private void writeObject(java.io.ObjectOutputStream)
+    private void readObject(java.io.ObjectInputStream)
+com.baidu.android.pushservice.CustomPushNotificationBuilder
+com.baidu.android.pushservice.IPushLightappListener
+com.baidu.android.pushservice.PushConstants:
+    private static final java.lang.String TAG
+    public static final java.lang.String EXTRA_PUSH_MESSAGE
+    public static final java.lang.String EXTRA_PUSH_MESSAGE_STRING
+    public static final java.lang.String ACTION_MESSAGE
+    public static final java.lang.String ACTION_SDK_MESSAGE
+    public static final java.lang.String ACTION_LAPP_MESSAGE
+    public static final java.lang.String ACTION_FB_MESSAGE
+    public static final java.lang.String ACTION_METHOD
+    public static final java.lang.String ACTION_RECEIVE
+    public static final java.lang.String ACTION_SDK_RECEIVE
+    public static final java.lang.String ACTION_WEB_RECEIVE
+    public static final java.lang.String ACTION_LAPP_RECEIVE
+    public static final java.lang.String EXTRA_WEB_BIND_API_KEY
+    public static final java.lang.String ACTION_RECEIVER_NOTIFICATION_CLICK
+    public static final java.lang.String ACTION_RECEIVER_NOTIFICATION_ARRIVED
+    public static final java.lang.String EXTRA_METHOD
+    public static final java.lang.String PACKAGE_NAME
+    public static final java.lang.String EXTRA_ERROR_CODE
+    public static final java.lang.String EXTRA_CONTENT
+    public static final java.lang.String EXTRA_TAGS_LIST
+    public static final java.lang.String EXTRA_APP_ID
+    public static final java.lang.String EXTRA_USER_ID
+    public static final java.lang.String EXTRA_APP
+    public static final java.lang.String EXTRA_ACCESS_TOKEN
+    public static final java.lang.String EXTRA_API_KEY
+    public static final java.lang.String EXTRA_REAL_BIND
+    public static final java.lang.String EXTRA_BIND_NAME
+    public static final java.lang.String EXTRA_BIND_STATUS
+    public static final java.lang.String EXTRA_PUSH_SDK_VERSION
+    public static final java.lang.String EXTRA_MSG_KEY
+    public static final java.lang.String EXTRA_MSG
+    public static final java.lang.String EXTRA_CB_URL
+    public static final java.lang.String EXTRA_TIMESTAMP
+    public static final java.lang.String EXTRA_MSGID
+    public static final java.lang.String EXTRA_HASHCODE
+    public static final java.lang.String EXTRA_OPENTYPE
+    public static final java.lang.String EXTRA_EXTRA
+    public static final java.lang.String EXTRA_CLIENT_SDK_VERSION
+    public static final java.lang.String EXTRA_LAPP_BIND_STATE
+    public static final int OPEN_BY_USER
+    public static final int OPEN_BY_NOTIFICATION
+    public static final int BIND_STATUS_ONLINE
+    public static final int BIND_STATUS_OFFLINE
+    public static final java.lang.String METHOD_SEND_MSG_TO_SERVER
+    public static final java.lang.String METHOD_SEND_MSG_TO_USER
+    public static final java.lang.String METHOD_APPSTART
+    public static final java.lang.String METHOD_APPSTOP
+    public static final java.lang.String METHOD_SEND
+    public static final java.lang.String METHOD_BIND
+    public static final java.lang.String METHOD_SDK_BIND
+    public static final java.lang.String METHOD_WEBAPP_BIND_FROM_DEEPLINK
+    public static final java.lang.String METHOD_WEBAPP_BIND_INTENT
+    public static final java.lang.String METHOD_LAPP_BIND_INTENT
+    public static final java.lang.String METHOD_UNBIND
+    public static final java.lang.String METHOD_SDK_UNBIND
+    public static final java.lang.String METHOD_LAPP_UNBIND
+    public static final java.lang.String METHOD_GET_LAPP_BIND_STATE
+    public static final java.lang.String EXTRA_FETCH_TYPE
+    public static final java.lang.String EXTRA_FETCH_NUM
+    public static final java.lang.String METHOD_FETCH
+    public static final java.lang.String METHOD_COUNT
+    public static final java.lang.String EXTRA_MSG_IDS
+    public static final java.lang.String METHOD_DELETE
+    public static final java.lang.String METHOD_GBIND
+    public static final java.lang.String EXTRA_GID
+    public static final java.lang.String METHOD_SET_TAGS
+    public static final java.lang.String METHOD_SET_SDK_TAGS
+    public static final java.lang.String METHOD_SET_LAPP_TAGS
+    public static final java.lang.String METHOD_DEL_TAGS
+    public static final java.lang.String METHOD_DEL_SDK_TAGS
+    public static final java.lang.String METHOD_DEL_LAPP_TAGS
+    public static final java.lang.String EXTRA_TAGS
+    public static final java.lang.String EXTRA_NOTIFICATION_TITLE
+    public static final java.lang.String EXTRA_NOTIFICATION_CONTENT
+    public static final java.lang.String EXTRA_FORCE_SEND
+    public static final java.lang.String METHOD_GUNBIND
+    public static final java.lang.String METHOD_GINFO
+    public static final java.lang.String METHOD_GLIST
+    public static final java.lang.String METHOD_LISTTAGS
+    public static final java.lang.String METHOD_LIST_SDK_TAGS
+    public static final java.lang.String METHOD_LIST_LAPP_TAGS
+    public static final java.lang.String METHOD_FETCHGMSG
+    public static final java.lang.String EXTRA_GROUP_FETCH_TYPE
+    public static final java.lang.String EXTRA_GROUP_FETCH_NUM
+    public static final java.lang.String METHOD_COUNTGMSG
+    public static final java.lang.String METHOD_ONLINE
+    public static final java.lang.String ERROR_AIDL_FAIL_EXCEPTION
+    public static final java.lang.String ERROR_AIDL_FAIL_NO_PUSHSERVICE
+    public static final short ORIGINAL_VERSION
+    public static final int ERROR_SUCCESS
+    public static final int ERROR_NETWORK_ERROR
+    public static final int ERROR_APP_CHECK_FAILED
+    public static final int ERROR_SERVICE_NOT_AVAILABLE
+    public static final int ERROR_SERVICE_NOT_AVAILABLE_TEMP
+    public static final int ERROR_UNKNOWN
+    public static final int ERROR_SERVER_INTERNAL_ERROR
+    public static final int ERROR_METHOD_ERROR
+    public static final int ERROR_PARAMS_ERROR
+    public static final int ERROR_AUTHENTICATION_FAILED
+    public static final int ERROR_QUOTA_USE_UP
+    public static final int ERROR_DATA_NOT_FOUND
+    public static final int ERROR_TIME_EXPIRES
+    public static final int ERROR_CHANNEL_TOKEN_TIMEOUT
+    public static final int ERROR_BIND_NOT_EXIST
+    public static final int ERROR_BIND_OVERLOAD
+    public static final int ERROR_DUPLICATE_OPERATION
+    public static final int ERROR_GROUP_NOT_FOUND
+    public static final int ERROR_APP_FORBIDDEN
+    public static final int ERROR_APP_NEED_INIAL
+    public static final int ERROR_TOO_MANY_TAG_FOR_USER
+    public static final int ERROR_TOO_MANY_TAG_FOR_APP
+    public static final int ERROR_LIGHTAPP_NO_UNICAST_CAPABILITY
+    public static final int ERROR_LIGHTAPP_NO_MULTICAST_CAPABILITY
+    public static final int ERROR_LIGHTAPP_NOT_APPROVED
+    public static final int ERROR_REQUEST_TOO_FREQUENT
+    public static final int ERROR_AIDL_FAIL
+    public static final int ERROR_GET_LIGHT_INFO_FAIL
+    public static final java.lang.String ERROR_GET_LIGHT_INFO_FAIL_MSG
+    public static final int ERROR_NOT_REGISTER_OR_FOUND
+    public static final java.lang.String ERROR_NOT_REGISTER_FOUND
+    private static final java.lang.String REG_ERROR_UNKNOWN
+    public static final int ERROR_WEAK_SUBSCRIBE_BLACKED
+    public static final int LOGIN_TYPE_API_KEY
+    public static final int LOGIN_TYPE_ACCESS_TOKEN
+    public static final int LOGIN_TYPE_BDUSS
+    public static final int LOGIN_TYPE_WEB_APP_API_KEY
+    public static final int LOGIN_TYPE_LIGHT_APP_API_KEY
+    public static final int LOGIN_TYPE_UNKNOWN
+    public static final java.lang.String EXTRA_BIND_FOR_ADVERTISE
+    public static final java.lang.String ADVERTISE_ENABLE
+    private PushConstants()
+    public static android.content.Intent createSDKMethodIntent(android.content.Context)
+com.baidu.android.pushservice.PushLightapp
+com.baidu.android.pushservice.PushManager:
+    private static final java.lang.String TAG
+    public PushManager()
+    public static void startWork(android.content.Context,java.lang.String,java.lang.String)
+    public static void sdkStartWork(android.content.Context,java.lang.String,int)
+    public static void stopWork(android.content.Context)
+    public static void resumeWork(android.content.Context)
+    public static boolean isPushEnabled(android.content.Context)
+    private static void sdkBind(android.content.Context,int,java.lang.String,int)
+    public static void unbind(android.content.Context)
+    public static void sdkUnbind(android.content.Context,java.lang.String)
+    public static void getLappBindState(android.content.Context,java.lang.String)
+    private static android.content.Intent createSDKMethodIntent(android.content.Context,java.lang.String)
+    private static android.content.Intent createLappMethodIntent(android.content.Context,java.lang.String)
+    public static void fetchMessages(android.content.Context,int,int)
+    public static void getMessageCounts(android.content.Context)
+    public static void deleteMessages(android.content.Context,java.lang.String[])
+    public static void sendMsgToUser(android.content.Context,java.lang.String,java.lang.String,java.lang.String,java.lang.String)
+    public static void bindGroup(android.content.Context,java.lang.String)
+    public static void setTags(android.content.Context,java.util.List)
+    public static void setSDKTags(android.content.Context,java.lang.String,java.util.List)
+    public static void setLappTags(android.content.Context,java.lang.String,java.util.List)
+    public static void listTags(android.content.Context)
+    public static void listSDKTags(android.content.Context,java.lang.String)
+    public static void listLappTags(android.content.Context,java.lang.String)
+    public static void delTags(android.content.Context,java.util.List)
+    public static void delSDKTags(android.content.Context,java.lang.String,java.util.List)
+    public static void delLappTags(android.content.Context,java.lang.String,java.util.List)
+    public static void unbindGroup(android.content.Context,java.lang.String)
+    public static void getGroupInfo(android.content.Context,java.lang.String)
+    public static void getGroupList(android.content.Context)
+    public static void fetchGroupMessages(android.content.Context,java.lang.String,int,int)
+    public static void getGroupMessageCounts(android.content.Context,java.lang.String)
+    public static void setDefaultNotificationBuilder(android.content.Context,com.baidu.android.pushservice.PushNotificationBuilder)
+    public static void setNotificationBuilder(android.content.Context,int,com.baidu.android.pushservice.PushNotificationBuilder)
+    public static void setMediaNotificationBuilder(android.content.Context,com.baidu.android.pushservice.PushNotificationBuilder)
+    public static void tryConnect(android.content.Context)
+    private static android.content.Intent createSDKMethodIntent(android.content.Context)
+    public static void enableLbs(android.content.Context)
+    public static void disableLbs(android.content.Context)
+    public static void setNoDisturbMode(android.content.Context,int,int,int,int)
+    public static void insertPassThroughMessageClick(android.content.Context,java.lang.String,java.lang.String)
+    public static void insertPassThroughMessageDelete(android.content.Context,java.lang.String,java.lang.String)
+    public static void insertPassThroughMessageNotified(android.content.Context,java.lang.String,java.lang.String)
+com.baidu.android.pushservice.PushNotificationBuilder:
+    public void setNotificationSound(java.lang.String)
+    public void setNotificationVibrate(long[])
+com.baidu.android.pushservice.PushSDK:
+    public static final java.lang.String LOCAL_SOCKET_ADDRESS
+    public static boolean isAlive()
+    public android.content.Context getContext()
+com.baidu.android.pushservice.PushService:
+    private static final java.lang.String TAG
+    public static final java.lang.String ACTION_START
+    public static final java.lang.String ACTION_STOP
+    public static final int FLAG_INCLUDE_STOPPED_PACKAGES
+    public static final int SERVICE_STOPPED_DELAY
+com.baidu.android.pushservice.PushServiceReceiver:
+    private static final java.lang.String TAG
+com.baidu.android.pushservice.PushSettings:
+    public PushSettings()
+    public static void enableDebugMode(android.content.Context,boolean)
+    public static void a(android.content.Context,boolean)
+com.baidu.android.pushservice.RegistrationReceiver:
+    private static final java.lang.String TAG
+com.baidu.android.pushservice.a:
+    public static void c(android.content.Context,boolean)
+com.baidu.android.pushservice.b.a$a:
+    public static com.baidu.android.pushservice.b.a a(android.os.IBinder)
+com.baidu.android.pushservice.b.a$a$a
+com.baidu.android.pushservice.b.b$a:
+    public b$a()
+com.baidu.android.pushservice.db.LightAppDatabase:
+    private static final java.lang.String TAG
+    public LightAppDatabase()
+com.baidu.android.pushservice.db.LightAppTableDefine
+com.baidu.android.pushservice.f.w
+com.baidu.android.pushservice.f.x
+com.baidu.android.pushservice.f.y
+com.baidu.android.pushservice.f.z
+com.baidu.android.pushservice.g:
+    public static void a(android.content.Context,com.baidu.android.pushservice.PushNotificationBuilder)
+    public static void a(android.content.Context,int,com.baidu.android.pushservice.PushNotificationBuilder)
+    public static void b(android.content.Context,com.baidu.android.pushservice.PushNotificationBuilder)
+com.baidu.android.pushservice.jni.BaiduAppSSOJni:
+    private static final java.lang.String TAG
+    public BaiduAppSSOJni()
+    private static native byte[] encrypt(java.lang.String,java.lang.String)
+com.baidu.android.pushservice.l
+com.baidu.android.pushservice.m
+com.baidu.android.pushservice.message.PublicMsg:
+    private static final java.lang.String TAG
+    public static final int FLAG_NEED_CLEAR
+    public static final int FLAG_NEED_VIBRATE
+    public static final int FLAG_NEED_SOUND
+com.baidu.android.pushservice.n
+com.baidu.android.pushservice.o
+com.baidu.android.pushservice.p
+com.baidu.android.pushservice.q
+com.baidu.android.pushservice.r
+com.baidu.android.pushservice.util.Internal:
+    private Internal()
+    public static void disablePushConnection(android.content.Context)
+    public static void enablePushConnection(android.content.Context)
+com.baidu.android.pushservice.util.NoProGuard
+com.baidu.android.pushservice.util.PushClientDataBase:
+    private static final int DB_VERSION
+    private static final java.lang.String DB_DIR
+    private static final java.lang.String DATA_DIR
+    private static final java.lang.String TAG
+    private static final java.lang.String DB_NAME
+    public PushClientDataBase()
+    public static void close()
+    public static synchronized void setPushADSwitch(android.content.Context,boolean)
+    public static synchronized void setPushADMaxCount(android.content.Context,int)
+    public static synchronized void setPushADServerMaxCount(android.content.Context,int)
+com.baidu.android.pushservice.util.PushDatabase:
+    private static final int DB_VERSION
+    private static final java.lang.String DB_DIR
+    private static final java.lang.String DB_NAME
+    private static final java.lang.String TAG
+    public PushDatabase()
+    public static java.util.List getWifiActionBehaviorEnumClassList(android.content.Context,long,long,int,int)
+    public static java.util.List getWifiBehaviorEnumClassList(android.content.Context,long,long,int,int)
+    public static long insertWifiActionBehavior(android.content.Context,com.baidu.android.pushservice.f.w)
+    public static long insertLappMsgInfo(android.content.Context,com.baidu.android.pushservice.util.PushDatabase$h)
+    public static long updateLappVisitedInfo(android.content.Context,com.baidu.android.pushservice.util.PushDatabase$h)
+    public static boolean getLappVisitedInfoByTime(android.content.Context,long)
+    public static long insertStatisticsInfo(android.content.Context,com.baidu.android.pushservice.util.PushDatabase$l)
+    public static long insertWifiBehavior(android.content.Context,com.baidu.android.pushservice.f.y)
+    public static long clearAppInfo(android.content.Context)
+    public static long setNoDisturbMode(android.content.Context,java.lang.String,int,int,int,int)
+com.baidu.android.pushservice.util.PushDatabase$h
+com.baidu.android.pushservice.util.PushDatabase$l
+com.baidu.android.pushservice.util.h:
+    public static boolean g(android.content.Context,java.lang.String)
+    public static android.content.Intent f(android.content.Context)
+    public static void b(android.content.Context,boolean)
+    public static void d(android.content.Context,boolean)
+com.baidu.frontia.base.check.FrontiaError
+com.baidu.loctp.str.BDLocManager:
+    public java.lang.String getLocString()
+    public boolean startWifiScan()
+com.example.secondapp.BuildConfig
+com.example.secondapp.R:
+    10:10:public R()
+com.example.secondapp.R$anim
+com.example.secondapp.R$array
+com.example.secondapp.R$attr
+com.example.secondapp.R$color
+com.example.secondapp.R$dimen
+com.example.secondapp.R$drawable
+com.example.secondapp.R$id
+com.example.secondapp.R$layout
+com.example.secondapp.R$menu
+com.example.secondapp.R$raw
+com.example.secondapp.R$string
+com.example.secondapp.R$style
+com.example.secondapp.R$styleable:
+    1524:1524:public R$styleable()
+com.example.secondapp.SecondApplication:
+    public android.widget.TextView mLocationResult
+    public android.widget.TextView logMsg
+    public android.widget.TextView trigger
+    public android.widget.TextView exit
+    public android.os.Vibrator mVibrator
+    public static java.lang.String locationDescribe
+    74:77:public com.example.secondapp.base.ActivityTack getTack()
+    86:89:public java.util.concurrent.ExecutorService getLxThread()
+    186:186:public com.android.volley.toolbox.ImageLoader getImageLoader()
+    243:248:public void logMsg(java.lang.String)
+com.example.secondapp.activity.ClassDetail:
+    com.example.secondapp.view.PullToRefreshView classptrv
+com.example.secondapp.activity.CommodityDetail:
+    android.widget.ImageView test2
+com.example.secondapp.activity.OrderConfirm:
+    java.lang.String count
+    double total
+    public static final java.lang.String PARTNER
+    public static final java.lang.String SELLER
+    public static final java.lang.String RSA_PRIVATE
+    public static final java.lang.String RSA_PUBLIC
+    private static final int SDK_PAY_FLAG
+    private static final int SDK_CHECK_FLAG
+    302:376:void setOrder()
+    484:492:public java.lang.String getOutTradeNo()
+    502:552:public void pay(com.example.secondapp.data.Order)
+    645:648:public void getSDKVersion()
+    79:79:static synthetic void access$2(com.example.secondapp.activity.OrderConfirm,com.example.secondapp.data.Order)
+    79:79:static synthetic com.example.secondapp.data.Order access$3(com.example.secondapp.activity.OrderConfirm)
+    63:63:static synthetic com.example.secondapp.bean.AdressBean access$4(com.example.secondapp.activity.OrderConfirm)
+com.example.secondapp.activity.OrderConfirm$10
+com.example.secondapp.activity.OrderConfirm$11
+com.example.secondapp.activity.OrderConfirm$4
+com.example.secondapp.activity.OrderConfirm$5
+com.example.secondapp.activity.OrderConfirm$6
+com.example.secondapp.activity.PayInterface:
+    public static final java.lang.String PARTNER
+    public static final java.lang.String SELLER
+    public static final java.lang.String RSA_PRIVATE
+    public static final java.lang.String RSA_PUBLIC
+    private static final int SDK_PAY_FLAG
+    private static final int SDK_CHECK_FLAG
+com.example.secondapp.activity.PayMode:
+    com.alipay.sdk.pay.PayUtils payed
+    77:84:public void initPayfor()
+com.example.secondapp.activity.PayMode$1
+com.example.secondapp.activity.PersonalMsg:
+    private static final int PHOTO_REQUEST_TAKEPHOTO
+    private static final int PHOTO_REQUEST_GALLERY
+    private static final int PHOTO_REQUEST_CUT
+com.example.secondapp.activity.Setting:
+    android.widget.ToggleButton togglebutton2
+    android.widget.ToggleButton togglebutton3
+com.example.secondapp.activity.ShoppingCartList:
+    double keeptotal
+    com.example.secondapp.bean.ShoppingcartBean bean
+    android.content.SharedPreferences sharedPreferences
+com.example.secondapp.adapter.AdressAdapter:
+    android.widget.CheckBox checkBox
+    161:162:public static void setIsSelected(java.util.HashMap)
+com.example.secondapp.adapter.AdvertisingImageadapter:
+    19:22:public AdvertisingImageadapter(android.content.Context,java.util.ArrayList)
+com.example.secondapp.adapter.LvAdapter:
+    15:18:public LvAdapter(java.util.List,android.content.Context)
+com.example.secondapp.adapter.MyOrderAdapter:
+    public static double totalpri
+    private com.example.secondapp.adapter.OnClickContentItemListener onClickContentItemListener
+com.example.secondapp.adapter.MyOrderAdapter2:
+    private com.example.secondapp.adapter.OnClickContentItemListener onClickContentItemListener
+com.example.secondapp.adapter.MyOrderAdapter3:
+    private com.example.secondapp.adapter.OnClickContentItemListener onClickContentItemListener
+com.example.secondapp.adapter.MyOrderAdapter4:
+    private com.example.secondapp.adapter.OnClickContentItemListener onClickContentItemListener
+com.example.secondapp.adapter.ShoppingCartAdapter:
+    int count
+    android.widget.ImageView deletered
+com.example.secondapp.anim.FrameAnimationController
+com.example.secondapp.anim.FrameAnimationController$AnimationHandler
+com.example.secondapp.base.ActivityTack:
+    40:46:public void exit(android.content.Context)
+com.example.secondapp.base.BaseActivity:
+    private static final int notifiId
+    99:99:public java.util.concurrent.ExecutorService getLxThread()
+    108:108:public com.example.secondapp.base.ActivityTack getTack()
+    116:136:public void addPutUploadFileRequest(java.lang.String,java.util.Map,java.util.Map,com.android.volley.Response$Listener,com.android.volley.Response$ErrorListener,java.lang.Object)
+com.example.secondapp.base.BaseActivity$1
+com.example.secondapp.base.MyBaseFragment:
+    27:28:public void save(java.lang.String,java.lang.Object)
+    36:36:public com.android.volley.RequestQueue getRequestQueue()
+    63:63:public java.util.concurrent.ExecutorService getLxThread()
+com.example.secondapp.broadcastreceiver.NetCheckReceiver:
+    private static final java.lang.String NETWORK_ACTION
+com.example.secondapp.city.CharacterParser:
+    private java.lang.String resource
+    63:63:public java.lang.String getResource()
+    67:68:public void setResource(java.lang.String)
+    129:129:public java.lang.String getSpelling()
+com.example.secondapp.city.CityList:
+    private java.lang.String[] sections
+    338:350:private void initOverlay()
+    49:49:static synthetic java.util.HashMap access$4(com.example.secondapp.city.CityList)
+    50:50:static synthetic java.lang.String[] access$6(com.example.secondapp.city.CityList)
+    51:51:static synthetic com.example.secondapp.city.CityList$OverlayThread access$8(com.example.secondapp.city.CityList)
+com.example.secondapp.city.CityList$LetterListViewListener
+com.example.secondapp.city.MyLetterListView
+com.example.secondapp.city.MyLetterListView$OnTouchingLetterChangedListener
+com.example.secondapp.clearcache.DataCleanManager:
+    11:11:public DataCleanManager()
+    18:19:public static void cleanInternalCache(android.content.Context)
+    36:37:public static void cleanSharedPreference(android.content.Context)
+    46:47:public static void cleanDatabaseByName(android.content.Context,java.lang.String)
+    55:56:public static void cleanFiles(android.content.Context)
+    64:68:public static void cleanExternalCache(android.content.Context)
+    76:77:public static void cleanCustomCache(java.lang.String)
+    86:97:public static varargs void cleanApplicationData(android.content.Context,java.lang.String[])
+    118:132:public static long getFolderSize(java.io.File)
+    143:166:public static void deleteFolderFile(java.lang.String,boolean)
+    175:201:public static java.lang.String getFormatSize(double)
+    206:206:public static java.lang.String getCacheSize(java.io.File)
+com.example.secondapp.db.DBManager
+com.example.secondapp.fragment.BottomFragment:
+    public static final int MAINPAGE
+    public static final int RECOMMEND
+    public static final int CLASSIFICATION
+    public static final int PERSONALCENTER
+com.example.secondapp.fragment.MainPageFragment:
+    android.widget.ScrollView scrollView
+com.example.secondapp.fragment.PersonalcenterFragment:
+    int position
+    int flag
+    java.lang.String path
+    178:200:public void uploadpic()
+    348:348:public void onUploadDone(int,java.lang.String)
+    353:353:public void onUploadProcess(int)
+    358:358:public void initUpload(int)
+com.example.secondapp.fragment.PersonalcenterFragment$3
+com.example.secondapp.fragmentdetail.CommodityBean
+com.example.secondapp.fragmentdetail.MOFragment4:
+    216:219:public void backgroundAlpha(float)
+com.example.secondapp.fragmentdetail.MOFragment4$poponDismissListener
+com.example.secondapp.fragmentdetail.RmdFragment1:
+    java.lang.String rmd1
+com.example.secondapp.fragmentdetail.RmdFragment2:
+    java.lang.String rmd2
+com.example.secondapp.fragmentdetail.RmdFragment3:
+    java.lang.String rmd3
+com.example.secondapp.fragmentdetail.RmdFragment4:
+    java.lang.String rmd4
+com.example.secondapp.handler.ImageHandler:
+    public static final int MSG_UPDATE_IMAGE
+    public static final int MSG_KEEP_SILENT
+    protected static final int MSG_BREAK_SILENT
+    public static final int MSG_PAGE_CHANGED
+    public static final long MSG_DELAY
+com.example.secondapp.http.AsyncHttpClient:
+    private static final int MAX_THREAD_POOL_NUM
+    144:162:public void upload(java.lang.String,java.lang.String,com.example.secondapp.http.HttpParams,com.example.secondapp.http.AsyncHttpResponseHandler)
+com.example.secondapp.http.AsyncHttpClient$HttpClientThread:
+    java.net.URLConnection urlConnection
+    358:436:private java.lang.String myGet(java.lang.String)
+    620:669:private java.lang.String sendPost(java.lang.String,java.lang.String)
+    912:995:private java.lang.String myPost(java.lang.String,java.lang.String)
+com.example.secondapp.http.DownListener
+com.example.secondapp.http.HttpClientUtils:
+    3:3:public HttpClientUtils()
+com.example.secondapp.http.HttpParams:
+    17:23:public void put(java.lang.String,boolean)
+    26:32:public void put(java.lang.String,byte)
+    35:41:public void put(java.lang.String,char)
+    53:59:public void put(java.lang.String,long)
+    62:68:public void put(java.lang.String,float)
+    104:150:public static java.lang.String getGetUrl(java.lang.String,java.lang.String,com.example.secondapp.http.HttpParams)
+com.example.secondapp.http.Logg:
+    public static final boolean DEBUG
+    6:6:public Logg()
+    11:12:public static void v(java.lang.String,java.lang.String)
+    35:37:public static void w(java.lang.String,java.lang.String,java.lang.Throwable)
+com.example.secondapp.http.SimpleClient
+com.example.secondapp.http.UploadUtil
+com.example.secondapp.http.UploadUtil$1
+com.example.secondapp.http.UploadUtil$OnUploadProcessListener
+com.example.secondapp.http.UploadUtil$uploadProcessListener
+com.example.secondapp.networkbitmap.BitmapCache:
+    60:67:public synchronized void remove(java.lang.String)
+    73:79:public void clearCache()
+com.example.secondapp.networkbitmap.BitmapDownloader:
+    public static final int DOWNLOAD_TAG
+    152:154:public void setErrorDrawable(android.graphics.drawable.Drawable)
+    169:171:public void setInProgressDrawable(android.graphics.drawable.Drawable)
+    178:180:public void setErrorDrawable(int)
+    187:189:public void setInProgressDrawable(int)
+    221:222:public void setBitmapLoaderCallback(com.example.secondapp.networkbitmap.BitmapDownloader$BitmapLoaderCallback)
+    243:246:public void reDownload(java.lang.String,java.lang.String,android.widget.ImageView)
+    252:254:public void loadFromSD(java.lang.String,android.widget.ImageView)
+    260:268:public void cancelAllDownloads()
+com.example.secondapp.networkbitmap.BitmapDownloader$Download:
+    private com.example.secondapp.networkbitmap.BitmapSDLoaderTask mBitmapSDLoaderTask
+    328:337:public BitmapDownloader$Download(com.example.secondapp.networkbitmap.BitmapDownloader,android.widget.ImageView,java.lang.String)
+    403:430:public void loadFromSD()
+    436:442:public void reLoadImage()
+    529:538:private void loadFromSD(android.widget.ImageView)
+    934:974:public void sdNotFound()
+    981:990:public void sdLoadBitmap(android.graphics.Bitmap)
+    997:1003:public void sdOnLoadError()
+    1010:1016:public void sdOnLoadCancelled()
+com.example.secondapp.networkbitmap.BitmapDownloader$Download$1:
+    676:676:public void onStarted()
+com.example.secondapp.networkbitmap.BitmapSDLoaderTask
+com.example.secondapp.networkbitmap.BitmapSDLoaderTask$BitmapSDLoadListener
+com.example.secondapp.networkbitmap.BitmapTransitionDrawable:
+    private static final int TRANSITION_STARTING
+    private static final int TRANSITION_RUNNING
+    private static final int TRANSITION_ENDED
+    private static final int TRANSITION_NONE
+    110:113:public void resetTransition()
+    125:151:public void reverseTransition(int)
+    234:234:public boolean isCrossFadeEnabled()
+    241:241:public com.example.secondapp.networkbitmap.BitmapTransitionDrawable$BitmapTransitionCallback getTransitionCallback()
+    253:265:private void onStart()
+com.example.secondapp.networkbitmap.BitmapTransitionDrawable$1
+com.example.secondapp.networkbitmap.BitmapTransitionDrawable$BitmapTransitionCallback:
+    public abstract void onStarted()
+com.example.secondapp.networkbitmap.BitmapUtil:
+    20:20:public BitmapUtil()
+    50:63:public static com.example.secondapp.networkbitmap.BitmapDownloader getInstance(int,int)
+    74:78:public static com.example.secondapp.networkbitmap.BitmapDownloader getInstance(int)
+    86:88:public static com.example.secondapp.networkbitmap.BitmapDownloader getInstance(java.lang.String,int,int)
+    98:100:public static com.example.secondapp.networkbitmap.BitmapDownloader getInstance(int,java.lang.String)
+    132:147:public static android.graphics.Bitmap compressImage(android.graphics.Bitmap)
+    156:189:public static android.graphics.Bitmap comp(java.lang.String)
+    199:218:public static void writeImage(android.graphics.Bitmap,java.lang.String)
+    231:251:public static android.graphics.Bitmap getResizedBitmap(java.lang.String,byte[],android.content.Context,android.net.Uri,int,boolean)
+    265:282:public static android.graphics.Bitmap decode(java.lang.String,byte[],android.content.Context,android.net.Uri,android.graphics.BitmapFactory$Options)
+    292:300:private static int sampleSize(int,int)
+    309:311:public static java.lang.String bitmapToBase64(android.graphics.Bitmap)
+com.example.secondapp.networkbitmap.MD5:
+    9:9:MD5()
+com.example.secondapp.networkbitmap.PhotoUtils
+com.example.secondapp.networkbitmap.SystemBase:
+    8:8:public SystemBase()
+com.example.secondapp.serviceId.CheckNetwork:
+    12:12:public CheckNetwork()
+com.example.secondapp.serviceId.MyWebAppInterface
+com.example.secondapp.serviceId.ServerId:
+    3:3:public ServerId()
+com.example.secondapp.sharedprefernces.SharedPrefsUtil:
+    public static final java.lang.String SETTING
+    7:7:public SharedPrefsUtil()
+    15:18:public static void putValue(android.content.Context,java.lang.String,boolean)
+    20:23:public static void putValue(android.content.Context,java.lang.String,java.lang.String)
+    30:32:public static boolean getValue(android.content.Context,java.lang.String,boolean)
+com.example.secondapp.upload.CommonUtil:
+    private static volatile com.android.volley.RequestQueue requestQueue
+    private static volatile com.google.gson.Gson gson
+    26:33:public static com.android.volley.RequestQueue getQueue(android.content.Context)
+    53:60:public static com.google.gson.Gson getGson()
+com.example.secondapp.upload.MultiPartRequest:
+    public abstract void addFileUpload(java.lang.String,java.io.File)
+    public abstract void addStringUpload(java.lang.String,java.lang.String)
+com.example.secondapp.upload.MultiPartStack:
+    private static final java.lang.String HEADER_CONTENT_TYPE
+com.example.secondapp.upload.MultiPartStringRequest:
+    62:63:public void addFileUpload(java.lang.String,java.io.File)
+    66:67:public void addStringUpload(java.lang.String,java.lang.String)
+com.example.secondapp.util.CompressPhotoUtil:
+    private static final int TARGET_WIDTH
+    private static final int TARGET_HEIGHT
+    17:17:public CompressPhotoUtil()
+    26:45:public static android.graphics.Bitmap compressBySize(java.lang.String)
+com.example.secondapp.util.RelativeDateFormat:
+    private static final long ONE_MINUTE
+    private static final long ONE_HOUR
+    private static final long ONE_DAY
+    private static final long ONE_WEEK
+    private static final java.lang.String ONE_SECOND_AGO
+    private static final java.lang.String ONE_MINUTE_AGO
+    private static final java.lang.String ONE_HOUR_AGO
+    private static final java.lang.String ONE_DAY_AGO
+    private static final java.lang.String ONE_MONTH_AGO
+    private static final java.lang.String ONE_YEAR_AGO
+    9:9:public RelativeDateFormat()
+    56:56:private static long toSeconds(long)
+    60:60:private static long toMinutes(long)
+    64:64:private static long toHours(long)
+    68:68:private static long toDays(long)
+    72:72:private static long toMonths(long)
+    76:76:private static long toYears(long)
+com.example.secondapp.util.StringUtil:
+    private static final java.lang.String regEx_script
+    private static final java.lang.String regEx_style
+    private static final java.lang.String regEx_html
+    29:29:public StringUtil()
+    55:72:public static java.lang.String join(java.lang.String,java.lang.Object[])
+    79:85:public static java.lang.String replaceBlank(java.lang.String)
+    90:120:public static final java.lang.String md5(java.lang.String)
+    128:129:public static java.lang.String getUUID()
+    140:153:public static java.lang.String getFrontBackStrDate(java.lang.String,java.lang.String,int)
+    157:183:public static java.lang.String lastWeek()
+    191:203:public static java.lang.String delHTMLTag(java.lang.String)
+    229:239:public static final void openGPS(android.content.Context)
+com.example.secondapp.versionupdate.UpdateManager:
+    private static final int DOWNLOAD
+    private static final int DOWNLOAD_FINISH
+    182:207:private void showNoticeDialog()
+com.example.secondapp.versionupdate.UpdateManager$4
+com.example.secondapp.versionupdate.UpdateManager$5
+com.example.secondapp.view.CheckSwitchButton
+com.example.secondapp.view.CheckSwitchButton$1
+com.example.secondapp.view.CheckSwitchButton$PerformClick
+com.example.secondapp.view.CheckSwitchButton$SwitchAnimation
+com.example.secondapp.view.CircleImageView:
+    private static final int COLORDRAWABLE_DIMENSION
+    private static final int DEFAULT_BORDER_WIDTH
+    private static final int DEFAULT_BORDER_COLOR
+com.example.secondapp.view.MyDialog:
+    129:130:public void setIcon(int)
+    135:136:public void setIcon(android.graphics.drawable.Drawable)
+    189:197:public void setNeutralButton(java.lang.CharSequence,android.content.DialogInterface$OnClickListener)
+    200:201:public void setNeutralButton(int,android.content.DialogInterface$OnClickListener)
+com.example.secondapp.view.MyGridview
+com.example.secondapp.view.MyListView
+com.example.secondapp.view.MyListViewUpDown:
+    public static final int REFRESH
+    public static final int LOAD
+    private static final int RELEASE_To_REFRESH
+    private static final int PULL_To_REFRESH
+    private static final int REFRESHING
+    private static final int DONE
+    private static final int LOADING
+    private static final int RATIO
+    android.content.Context context
+    332:332:public boolean isLoadEnable()
+com.example.secondapp.view.PullToRefreshLV:
+    private static final int RELEASE_To_REFRESH
+    private static final int PULL_To_REFRESH
+    private static final int REFRESHING
+    private static final int DONE
+    private static final int LOADING
+    private static final int RATIO
+com.example.secondapp.view.PullToRefreshView:
+    private static final java.lang.String TAG
+    private static final int PULL_TO_REFRESH
+    private static final int RELEASE_TO_REFRESH
+    private static final int REFRESHING
+    private static final int PULL_UP_STATE
+    private static final int PULL_DOWN_STATE
+    560:562:public void onHeaderRefreshComplete(java.lang.CharSequence)
+com.example.secondapp.view.ReboundScrollView:
+    private static final java.lang.String TAG
+    private static final float MOVE_FACTOR
+    private static final int ANIM_TIME
+com.example.secondapp.view.RefreshableView
+com.example.secondapp.view.RefreshableView$RefreshListener
+com.nostra13.universalimageloader.cache.disc.DiscCacheAware:
+    public abstract java.io.File getDirectory()
+    public abstract boolean remove(java.lang.String)
+com.nostra13.universalimageloader.cache.disc.impl.BaseDiscCache:
+    public static final int DEFAULT_BUFFER_SIZE
+    public static final int DEFAULT_COMPRESS_QUALITY
+    private static final java.lang.String ERROR_ARG_NULL
+    private static final java.lang.String TEMP_IMAGE_POSTFIX
+    61:62:public BaseDiscCache(java.io.File)
+    69:70:public BaseDiscCache(java.io.File,java.io.File)
+    93:93:public java.io.File getDirectory()
+    148:148:public boolean remove(java.lang.String)
+    179:180:public void setBufferSize(int)
+    183:184:public void setCompressFormat(android.graphics.Bitmap$CompressFormat)
+    187:188:public void setCompressQuality(int)
+com.nostra13.universalimageloader.cache.disc.impl.LimitedAgeDiscCache
+com.nostra13.universalimageloader.cache.disc.impl.UnlimitedDiscCache:
+    32:33:public UnlimitedDiscCache(java.io.File)
+    40:41:public UnlimitedDiscCache(java.io.File,java.io.File)
+com.nostra13.universalimageloader.cache.disc.impl.ext.DiskLruCache:
+    static final java.lang.String JOURNAL_FILE
+    static final java.lang.String JOURNAL_FILE_TEMP
+    static final java.lang.String JOURNAL_FILE_BACKUP
+    static final java.lang.String MAGIC
+    static final java.lang.String VERSION_1
+    static final long ANY_SEQUENCE_NUMBER
+    private static final java.lang.String CLEAN
+    private static final java.lang.String DIRTY
+    private static final java.lang.String REMOVE
+    private static final java.lang.String READ
+    512:514:public synchronized void setMaxSize(long)
+    522:522:public synchronized long size()
+    531:531:public synchronized long fileCount()
+    637:637:public synchronized boolean isClosed()
+    648:652:public synchronized void flush()
+    702:702:private static java.lang.String inputStreamToString(java.io.InputStream)
+    87:87:static synthetic com.nostra13.universalimageloader.cache.disc.impl.ext.DiskLruCache$Editor access$1700(com.nostra13.universalimageloader.cache.disc.impl.ext.DiskLruCache,java.lang.String,long)
+    87:87:static synthetic java.lang.String access$1800(java.io.InputStream)
+com.nostra13.universalimageloader.cache.disc.impl.ext.DiskLruCache$Editor:
+    781:793:public java.io.InputStream newInputStream(int)
+    801:802:public java.lang.String getString(int)
+    840:847:public void set(int,java.lang.String)
+    872:878:public void abortUnlessCommitted()
+com.nostra13.universalimageloader.cache.disc.impl.ext.DiskLruCache$Snapshot:
+    727:727:public com.nostra13.universalimageloader.cache.disc.impl.ext.DiskLruCache$Editor edit()
+    737:737:public java.io.InputStream getInputStream(int)
+    742:742:public java.lang.String getString(int)
+    747:747:public long getLength(int)
+com.nostra13.universalimageloader.cache.disc.impl.ext.LruDiscCache:
+    public static final int DEFAULT_BUFFER_SIZE
+    public static final int DEFAULT_COMPRESS_QUALITY
+    private static final java.lang.String ERROR_ARG_NULL
+    private static final java.lang.String ERROR_ARG_NEGATIVE
+    68:69:public LruDiscCache(java.io.File,com.nostra13.universalimageloader.cache.disc.naming.FileNameGenerator,long)
+    117:117:public java.io.File getDirectory()
+    183:186:public boolean remove(java.lang.String)
+    223:224:public void setBufferSize(int)
+    227:228:public void setCompressFormat(android.graphics.Bitmap$CompressFormat)
+    231:232:public void setCompressQuality(int)
+com.nostra13.universalimageloader.cache.disc.impl.ext.StrictLineReader:
+    private static final byte CR
+    private static final byte LF
+com.nostra13.universalimageloader.cache.disc.impl.ext.Util:
+    30:31:private Util()
+    35:43:static java.lang.String readFully(java.io.Reader)
+com.nostra13.universalimageloader.cache.disc.naming.Md5FileNameGenerator:
+    private static final java.lang.String HASH_ALGORITHM
+    private static final int RADIX
+com.nostra13.universalimageloader.cache.memory.BaseMemoryCache
+com.nostra13.universalimageloader.cache.memory.LimitedMemoryCache
+com.nostra13.universalimageloader.cache.memory.impl.FIFOLimitedMemoryCache
+com.nostra13.universalimageloader.cache.memory.impl.LRULimitedMemoryCache
+com.nostra13.universalimageloader.cache.memory.impl.LargestLimitedMemoryCache
+com.nostra13.universalimageloader.cache.memory.impl.LimitedAgeMemoryCache
+com.nostra13.universalimageloader.cache.memory.impl.UsingFreqLimitedMemoryCache
+com.nostra13.universalimageloader.cache.memory.impl.WeakMemoryCache
+com.nostra13.universalimageloader.utils.DiskCacheUtils
+com.nostra13.universalimageloader.utils.ImageSizeUtils:
+    private static final int DEFAULT_MAX_BITMAP_DIMENSION
+    45:46:private ImageSizeUtils()
+com.nostra13.universalimageloader.utils.IoUtils:
+    public static final int DEFAULT_BUFFER_SIZE
+    public static final int CONTINUE_LOADING_PERCENTAGE
+    36:37:private IoUtils()
+    50:50:public static boolean copyStream(java.io.InputStream,java.io.OutputStream,com.nostra13.universalimageloader.utils.IoUtils$CopyListener)
+com.nostra13.universalimageloader.utils.L:
+    private static final java.lang.String LOG_FORMAT
+    33:34:private L()
+    43:44:public static void enableLogging()
+    53:54:public static void disableLogging()
+    68:69:public static void writeLogs(boolean)
+    94:95:public static varargs void e(java.lang.Throwable,java.lang.String,java.lang.Object[])
+com.nostra13.universalimageloader.utils.MemoryCacheUtils:
+    private static final java.lang.String URI_AND_SIZE_SEPARATOR
+    private static final java.lang.String WIDTH_AND_HEIGHT_SEPARATOR
+    39:40:private MemoryCacheUtils()
+    68:74:public static java.util.List findCachedBitmapsForImageUri(java.lang.String,com.nostra13.universalimageloader.cache.memory.MemoryCache)
+    84:90:public static java.util.List findCacheKeysForImageUri(java.lang.String,com.nostra13.universalimageloader.cache.memory.MemoryCache)
+    100:109:public static void removeFromCache(java.lang.String,com.nostra13.universalimageloader.cache.memory.MemoryCache)
+com.nostra13.universalimageloader.utils.StorageUtils:
+    private static final java.lang.String EXTERNAL_STORAGE_PERMISSION
+    private static final java.lang.String INDIVIDUAL_DIR_NAME
+    38:39:private StorageUtils()
+    111:118:public static java.io.File getOwnCacheDirectory(android.content.Context,java.lang.String)
+com.ta.utdid2.core.persistent.FastXmlSerializer:
+    private static final int BUFFER_LEN
+com.ta.utdid2.core.persistent.MySharedPreferences:
+    public abstract int getInt(java.lang.String,int)
+    public abstract float getFloat(java.lang.String,float)
+    public abstract boolean getBoolean(java.lang.String,boolean)
+    public abstract boolean contains(java.lang.String)
+    public abstract void registerOnSharedPreferenceChangeListener(com.ta.utdid2.core.persistent.MySharedPreferences$OnSharedPreferenceChangeListener)
+    public abstract void unregisterOnSharedPreferenceChangeListener(com.ta.utdid2.core.persistent.MySharedPreferences$OnSharedPreferenceChangeListener)
+com.ta.utdid2.core.persistent.MySharedPreferences$MyEditor:
+    public abstract com.ta.utdid2.core.persistent.MySharedPreferences$MyEditor remove(java.lang.String)
+com.ta.utdid2.core.persistent.PersistentConfiguration:
+    private static final java.lang.String KEY_TIMESTAMP
+    private static final java.lang.String KEY_TIMESTAMP2
+    248:257:public void putInt(java.lang.String,int)
+    272:281:public void putBoolean(java.lang.String,boolean)
+    284:293:public void putFloat(java.lang.String,float)
+    308:317:public void remove(java.lang.String)
+    320:342:public void reload()
+    345:355:public void clear()
+    432:438:public int getInt(java.lang.String)
+    442:448:public long getLong(java.lang.String)
+    452:458:public float getFloat(java.lang.String)
+    462:468:public boolean getBoolean(java.lang.String)
+    472:478:public java.util.Map getAll()
+com.ta.utdid2.core.persistent.TransactionXMLFile:
+    public static final int MODE_WORLD_WRITEABLE
+    public static final int MODE_WORLD_READABLE
+    public static final int MODE_PRIVATE
+com.ta.utdid2.core.persistent.TransactionXMLFile$MySharedPreferencesImpl:
+    167:170:public void registerOnSharedPreferenceChangeListener(com.ta.utdid2.core.persistent.MySharedPreferences$OnSharedPreferenceChangeListener)
+    174:177:public void unregisterOnSharedPreferenceChangeListener(com.ta.utdid2.core.persistent.MySharedPreferences$OnSharedPreferenceChangeListener)
+    194:197:public int getInt(java.lang.String,int)
+    208:211:public float getFloat(java.lang.String,float)
+    215:218:public boolean getBoolean(java.lang.String,boolean)
+    222:224:public boolean contains(java.lang.String)
+com.ta.utdid2.core.persistent.TransactionXMLFile$MySharedPreferencesImpl$EditorImpl:
+    267:270:public com.ta.utdid2.core.persistent.MySharedPreferences$MyEditor remove(java.lang.String)
+com.ta.utdid2.core.persistent.XmlUtils:
+    20:20:XmlUtils()
+    24:29:public static void skipCurrentTag(org.xmlpull.v1.XmlPullParser)
+    33:40:public static final int convertValueToList(java.lang.CharSequence,java.lang.String[],int)
+    45:53:public static final boolean convertValueToBoolean(java.lang.CharSequence,boolean)
+    58:96:public static final int convertValueToInt(java.lang.CharSequence,int)
+    101:104:public static final int convertValueToUnsignedInt(java.lang.String,int)
+    108:134:public static final int parseUnsignedIntAttribute(java.lang.CharSequence)
+    178:185:public static final void writeListXml(java.util.List,java.io.OutputStream)
+    479:481:public static final java.util.ArrayList readListXml(java.io.InputStream)
+    787:799:public static final void beginDocument(org.xmlpull.v1.XmlPullParser,java.lang.String)
+    805:808:public static final void nextElement(org.xmlpull.v1.XmlPullParser)
+com.ta.utdid2.device.Device:
+    19:19:long getCheckSum()
+com.ta.utdid2.device.DeviceInfo:
+    static final byte UTDID_VERSION_CODE
+    10:10:public DeviceInfo()
+com.ta.utdid2.device.UTDevice:
+    10:10:public UTDevice()
+com.ta.utdid2.device.UTUtdid:
+    private static final java.lang.String HMAC_KEY
+    static final java.lang.String UM_SETTINGS_STORAGE
+    static final java.lang.String UM_SETTINGS_STORAGE_NEW
+    private static final java.lang.String S_LOCAL_STORAGE_NAME
+    private static final java.lang.String S_LOCAL_STORAGE_KEY
+    private static final java.lang.String S_GLOBAL_PERSISTENT_CONFIG_KEY
+com.ta.utdid2.device.UTUtdidHelper:
+    63:67:public static java.lang.String generateRandomUTDID()
+com.tencent.mm.a.a
+com.tencent.mm.a.b
+com.tencent.mm.sdk.a.a
+com.tencent.mm.sdk.a.a$a
+com.tencent.mm.sdk.a.a.a
+com.tencent.mm.sdk.a.a.a$a
+com.tencent.mm.sdk.a.a.b
+com.tencent.mm.sdk.b.a
+com.tencent.mm.sdk.b.a$a
+com.tencent.mm.sdk.b.b
+com.tencent.mm.sdk.b.c
+com.tencent.mm.sdk.b.d
+com.tencent.mm.sdk.b.e
+com.tencent.mm.sdk.c.a
+com.tencent.mm.sdk.c.a$a
+com.tencent.mm.sdk.c.a$b
+com.tencent.mm.sdk.constants.Build
+com.tencent.mm.sdk.constants.ConstantsAPI
+com.tencent.mm.sdk.constants.ConstantsAPI$Token
+com.tencent.mm.sdk.constants.ConstantsAPI$WXApp
+com.tencent.mm.sdk.modelbase.BaseReq
+com.tencent.mm.sdk.modelbase.BaseResp
+com.tencent.mm.sdk.modelbase.BaseResp$ErrCode
+com.tencent.mm.sdk.modelbiz.AddCardToWXCardPackage
+com.tencent.mm.sdk.modelbiz.AddCardToWXCardPackage$Req
+com.tencent.mm.sdk.modelbiz.AddCardToWXCardPackage$Resp
+com.tencent.mm.sdk.modelbiz.AddCardToWXCardPackage$WXCardItem
+com.tencent.mm.sdk.modelbiz.JumpToBizProfile
+com.tencent.mm.sdk.modelbiz.JumpToBizProfile$Req
+com.tencent.mm.sdk.modelbiz.JumpToBizWebview
+com.tencent.mm.sdk.modelbiz.JumpToBizWebview$Req
+com.tencent.mm.sdk.modelmsg.GetMessageFromWX
+com.tencent.mm.sdk.modelmsg.GetMessageFromWX$Req
+com.tencent.mm.sdk.modelmsg.GetMessageFromWX$Resp
+com.tencent.mm.sdk.modelmsg.LaunchFromWX
+com.tencent.mm.sdk.modelmsg.LaunchFromWX$Req
+com.tencent.mm.sdk.modelmsg.LaunchFromWX$Resp
+com.tencent.mm.sdk.modelmsg.SendAuth
+com.tencent.mm.sdk.modelmsg.SendAuth$Req
+com.tencent.mm.sdk.modelmsg.SendAuth$Resp
+com.tencent.mm.sdk.modelmsg.SendMessageToWX
+com.tencent.mm.sdk.modelmsg.SendMessageToWX$Req
+com.tencent.mm.sdk.modelmsg.SendMessageToWX$Resp
+com.tencent.mm.sdk.modelmsg.ShowMessageFromWX
+com.tencent.mm.sdk.modelmsg.ShowMessageFromWX$Req
+com.tencent.mm.sdk.modelmsg.ShowMessageFromWX$Resp
+com.tencent.mm.sdk.modelmsg.WXAppExtendObject
+com.tencent.mm.sdk.modelmsg.WXAppLaunchData
+com.tencent.mm.sdk.modelmsg.WXAppLaunchData$Builder
+com.tencent.mm.sdk.modelmsg.WXEmojiObject
+com.tencent.mm.sdk.modelmsg.WXEmojiSharedObject
+com.tencent.mm.sdk.modelmsg.WXFileObject
+com.tencent.mm.sdk.modelmsg.WXImageObject
+com.tencent.mm.sdk.modelmsg.WXMediaMessage
+com.tencent.mm.sdk.modelmsg.WXMediaMessage$Builder
+com.tencent.mm.sdk.modelmsg.WXMediaMessage$IMediaObject
+com.tencent.mm.sdk.modelmsg.WXMusicObject
+com.tencent.mm.sdk.modelmsg.WXTextObject
+com.tencent.mm.sdk.modelmsg.WXVideoObject
+com.tencent.mm.sdk.modelmsg.WXWebpageObject
+com.tencent.mm.sdk.modelmsg.package-info
+com.tencent.mm.sdk.modelpay.PayReq
+com.tencent.mm.sdk.modelpay.PayReq$Options
+com.tencent.mm.sdk.modelpay.PayResp
+com.tencent.mm.sdk.openapi.IWXAPI
+com.tencent.mm.sdk.openapi.IWXAPIEventHandler
+com.tencent.mm.sdk.openapi.MMSharedPreferences
+com.tencent.mm.sdk.openapi.MMSharedPreferences$REditor
+com.tencent.mm.sdk.openapi.WXAPIFactory
+com.tencent.mm.sdk.openapi.WXApiImplComm
+com.tencent.mm.sdk.openapi.WXApiImplV10
+com.tencent.mm.sdk.openapi.WXApiImplV10$1
+com.tencent.mm.sdk.openapi.WXApiImplV10$ActivityLifecycleCb
+com.tencent.mm.sdk.openapi.WXApiImplV10$ActivityLifecycleCb$1
+com.tencent.mm.sdk.openapi.WXApiImplV10$ActivityLifecycleCb$2
+com.tencent.wxop.stat.a
+com.tencent.wxop.stat.a.a
+com.tencent.wxop.stat.a.b
+com.tencent.wxop.stat.ar
+com.tencent.wxop.stat.b.q:
+    public static void c(android.content.Context,java.lang.String,java.lang.String)
+com.tencent.wxop.stat.c:
+    private static boolean m(java.lang.String)
+    public static void b(android.content.Context,java.lang.String)
+    public static void n(java.lang.String)
+    public static void c(android.content.Context,java.lang.String)
+    public static void t()
+    public static void w()
+com.tencent.wxop.stat.e:
+    public static boolean a(android.content.Context,java.lang.String,java.lang.String)
+    public static void d(android.content.Context,java.lang.String)
+    public static java.util.Properties p(java.lang.String)
+com.tencent.wxop.stat.m
+kankan.wheel.widget.WheelAdapter
+kankan.wheel.widget.WheelScroller:
+    private static final int SCROLLING_DURATION
+    public static final int MIN_DELTA_FOR_SCROLLING
+kankan.wheel.widget.WheelView:
+    private static final int ITEM_OFFSET_PERCENT
+    private static final int PADDING
+    private static final int DEF_VISIBLE_ITEMS
+    266:267:public void removeChangingListener(kankan.wheel.widget.OnWheelChangedListener)
+    285:286:public void addScrollingListener(kankan.wheel.widget.OnWheelScrollListener)
+    293:294:public void removeScrollingListener(kankan.wheel.widget.OnWheelScrollListener)
+    319:320:public void addClickingListener(kankan.wheel.widget.OnWheelClickedListener)
+    327:328:public void removeClickingListener(kankan.wheel.widget.OnWheelClickedListener)
+    424:424:public boolean drawShadows()
+    442:443:public void setShadowColor(int,int,int)
+    953:954:public void stopScrolling()
+kankan.wheel.widget.adapters.AbstractWheelAdapter:
+    57:62:protected void notifyDataChangedEvent()
+    68:73:protected void notifyDataInvalidatedEvent()
+kankan.wheel.widget.adapters.AbstractWheelTextAdapter:
+    public static final int TEXT_VIEW_ITEM_RESOURCE
+    protected static final int NO_RESOURCE
+    public static final int DEFAULT_TEXT_COLOR
+    public static final int LABEL_COLOR
+    public static final int DEFAULT_TEXT_SIZE
+    99:99:public int getTextColor()
+    107:108:public void setTextColor(int)
+    115:115:public int getTextSize()
+    123:124:public void setTextSize(int)
+    131:131:public int getItemResource()
+    139:140:public void setItemResource(int)
+    147:147:public int getItemTextResource()
+    155:156:public void setItemTextResource(int)
+    163:163:public int getEmptyItemResource()
+    171:172:public void setEmptyItemResource(int)
+kankan.wheel.widget.adapters.AdapterWheel
+kankan.wheel.widget.adapters.NumericWheelAdapter
+net.sourceforge.pinyin4j.ChineseToPinyinResource$ChineseToPinyinResourceHolder:
+    private ChineseToPinyinResource$ChineseToPinyinResourceHolder()
+net.sourceforge.pinyin4j.ChineseToPinyinResource$Field
+net.sourceforge.pinyin4j.GwoyeuRomatzyhResource$GwoyeuRomatzyhSystemResourceHolder:
+    private GwoyeuRomatzyhResource$GwoyeuRomatzyhSystemResourceHolder()
+net.sourceforge.pinyin4j.GwoyeuRomatzyhTranslator:
+    GwoyeuRomatzyhTranslator()
+net.sourceforge.pinyin4j.PinyinFormatter:
+    PinyinFormatter()
+net.sourceforge.pinyin4j.PinyinHelper:
+    public static java.lang.String toHanyuPinyinString(java.lang.String,net.sourceforge.pinyin4j.format.HanyuPinyinOutputFormat,java.lang.String)
+    private static java.lang.String getFirstHanyuPinyinString(char,net.sourceforge.pinyin4j.format.HanyuPinyinOutputFormat)
+    private PinyinHelper()
+net.sourceforge.pinyin4j.PinyinRomanizationResource$PinyinRomanizationSystemResourceHolder:
+    private PinyinRomanizationResource$PinyinRomanizationSystemResourceHolder()
+net.sourceforge.pinyin4j.PinyinRomanizationTranslator:
+    PinyinRomanizationTranslator()
+net.sourceforge.pinyin4j.TextHelper:
+    TextHelper()
+net.sourceforge.pinyin4j.format.HanyuPinyinCaseType:
+    public java.lang.String getName()
+net.sourceforge.pinyin4j.format.HanyuPinyinToneType:
+    public java.lang.String getName()
+net.sourceforge.pinyin4j.format.HanyuPinyinVCharType:
+    public java.lang.String getName()
+net.sourceforge.pinyin4j.format.exception.BadHanyuPinyinOutputFormatCombination:
+    private static final long serialVersionUID

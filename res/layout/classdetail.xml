@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/redstandard"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:id="@+id/arrowback"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@color/transparent"
+                android:padding="8dp"
+                android:scaleY="0.9"
+                android:scaleX="0.8"
+                android:src="@drawable/arrowleftwhite" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/classtitle"
+            android:layout_width="0dip"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="5"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="@string/berry"
+            android:textColor="@color/common_white"
+            android:textSize="16sp" />
+
+        <LinearLayout
+            android:id="@+id/shoppingcart_LL"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <RelativeLayout
+            android:id="@+id/shoppingcart_RL"
+            android:layout_width="0dip"
+            android:layout_height="match_parent"
+            android:layout_weight="1" >
+
+            <FrameLayout
+                android:id="@+id/frameimg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="5dp"
+                android:layout_marginTop="3dp"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/numberimage"
+                    android:layout_width="13dp"
+                    android:layout_height="13dp"
+                    android:layout_gravity="center"
+                    android:contentDescription="@color/transparent"
+                    android:src="@drawable/radiobutton3" />
+
+                <TextView
+                    android:id="@+id/number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:text="@string/numberone"
+                    android:textColor="@color/common_white"
+                    android:textSize="12sp" />
+            </FrameLayout>
+
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:contentDescription="@color/transparent"
+                android:padding="8dp"
+                android:src="@drawable/shoppingcart" />
+        </RelativeLayout>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#F7F7F7"
+        android:orientation="horizontal" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/changemodeshape" >
+
+            <TextView
+                android:id="@+id/defaults"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@drawable/defaultsred"
+                android:gravity="center"
+                android:text="@string/defaults"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:textColor="@color/common_white" />
+
+            <TextView
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.002"
+                android:background="@color/redstandard" />
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/price"
+                android:textColor="@color/redstandard" />
+
+            <TextView
+                android:layout_width="0.5dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.002"
+                android:background="@color/redstandard" />
+
+            <TextView
+                android:id="@+id/sellnum"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:text="@string/sellnum"
+                android:textColor="@color/redstandard" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.example.secondapp.view.PullToRefreshView 
+        android:id="@+id/classptrv"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        
+        <ListView 
+            android:id="@+id/classlv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+			android:listSelector="@color/transparent"/>
+    </com.example.secondapp.view.PullToRefreshView>
+    
+</LinearLayout>

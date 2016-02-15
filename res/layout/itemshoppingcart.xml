@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <ImageView
+        android:id="@+id/comimage"
+        android:layout_width="85dp"
+        android:layout_height="85dp"
+        android:layout_centerVertical="true"
+        android:layout_margin="5dip"
+        android:contentDescription="@color/transparent"
+        android:scaleType="fitXY"
+        android:src="@drawable/demosmall1" />
+
+    <RelativeLayout
+        android:id="@+id/text11"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="5dp"
+        android:layout_toRightOf="@id/comimage"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/textname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/app_name" />
+        
+        <TextView
+            android:id="@+id/text1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text="@string/numberone"
+            android:layout_marginRight="10dp"
+            android:textColor="@color/common_grey_word" />
+        
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toLeftOf="@id/text1"
+            android:text="¥"
+            android:textColor="@color/common_grey_word"  />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/text22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text11"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="20dp"
+        android:layout_toRightOf="@id/comimage"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/total"
+            android:textColor="@color/common_grey_word" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="¥"
+            android:textColor="@color/redstandard" />
+
+        <TextView
+            android:id="@+id/text2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:text="@string/numberone"
+            android:textColor="@color/redstandard" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/text22"
+        android:layout_marginLeft="3dp"
+        android:layout_marginTop="10dp"
+        android:layout_toRightOf="@id/comimage"
+        android:paddingBottom="5dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/minus"
+            android:layout_width="20dip"
+            android:layout_height="20dp"
+            android:background="@drawable/background"
+            android:clickable="true"
+            android:gravity="center"
+            android:text="@string/minus" />
+
+        <TextView
+            android:id="@+id/count"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/background"
+            android:gravity="center"
+            android:text="1" />
+
+        <TextView
+            android:id="@+id/plus"
+            android:layout_width="20dip"
+            android:layout_height="20dp"
+            android:background="@drawable/background"
+            android:gravity="center"
+            android:text="@string/plus"
+            android:textColor="@color/redstandard" />
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/deletered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="60dp"
+        android:paddingBottom="5dp"
+        android:contentDescription="@color/transparent"
+        android:src="@drawable/delete" />
+
+</RelativeLayout>
